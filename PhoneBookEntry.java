@@ -1,4 +1,4 @@
-// Exercise 1
+
 public class PhoneBookEntry {
 
 	private int id;
@@ -6,7 +6,7 @@ public class PhoneBookEntry {
 	private String lastname;
 	private String email;
 	private int zipcode;
-	private int phonenumber;
+	private String phonenumber;
 	
 	public PhoneBookEntry() {
 		
@@ -15,10 +15,10 @@ public class PhoneBookEntry {
 		lastname = "";
 		email = "";
 		zipcode = -1;
-		phonenumber = -1;
+		phonenumber = "";
 	}
 	
-	public PhoneBookEntry(int id1, String firstname1, String lastname1, String email1, int zipcode1, int phonenumber1) {
+	public PhoneBookEntry(int id1, String firstname1, String lastname1, String email1, int zipcode1, String phonenumber1) {
 		
 		id = id1;
 		firstname = firstname1;
@@ -29,7 +29,7 @@ public class PhoneBookEntry {
 		
 	}
 	
-	public PhoneBookEntry(String firstname2, int phonenumber2) {
+	public PhoneBookEntry(String firstname2, String phonenumber2) {
 		
 		firstname = firstname2;
 		phonenumber = phonenumber2;
@@ -80,11 +80,11 @@ public class PhoneBookEntry {
 		this.zipcode = zipcode;
 	}
 
-	public int getPhonenumber() {
+	public String getPhonenumber() {
 		return phonenumber;
 	}
 
-	public void setPhonenumber(int phonenumber) {
+	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
 
